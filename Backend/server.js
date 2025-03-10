@@ -7,7 +7,7 @@ const customerRoutes = require("./routers/customerRoutes");
 const membershipRoutes = require("./routers/memberShipRoutes");
 
 var corsOptions = {
-  origin: "http://localhost:5173"
+  origin: "https://anthem-assignment-1.vercel.app/"
 };
 
 app.use(cors(corsOptions));
