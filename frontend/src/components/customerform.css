@@ -1,0 +1,74 @@
+.gradient-custom-3 {
+  /* fallback for old browsers */
+  background: #84fab0;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(132, 250, 176, 0.5),
+    rgba(143, 211, 244, 0.5)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(132, 250, 176, 0.5),
+    rgba(143, 211, 244, 0.5)
+  );
+}
+.gradient-custom-4 {
+  /* fallback for old browsers */
+  background: #84fab0;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(132, 250, 176, 1),
+    rgba(143, 211, 244, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(132, 250, 176, 1),
+    rgba(143, 211, 244, 1)
+  );
+}
+
+@media (min-width: 785px) and (min-height: 785px) {
+  .card {
+    width: 650px!important;
+    background-color: #c2f3d4 !important;
+  }
+  .card-body {
+    width: 600px!important;
+    margin-top: 5px !important;
+  }
+  .bg-image {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+
+
+@media (min-width: 1055px) and (min-height: 785px) {
+    .card {
+      width: 700px!important;
+      background-color: #c2f3d4 !important;
+    }
+    .card-body {
+      width: 600px!important;
+      margin-top: 5px !important;
+    }
+    
+  }
+  
+  section.vh-100.bg-light.container-lg .card {
+    width: 650px !important;
+    background-color: #c2f3d4 !important;
+  }
+  
