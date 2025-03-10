@@ -38,7 +38,7 @@ const CustomerForm = () => {
     const fetchMemberships = async () => {
       try {
         const resp = await axios.get(
-          "http://localhost:8080/api/membership/getAll"
+          "https://anthem-assignment-1.onrender.com/api/membership/getAll"
         );
         setMemberships(resp.data);
       } catch (error) {

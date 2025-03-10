@@ -21,7 +21,7 @@ const EditCustomer = () => {
     const fetchMemberships = async () => {
       try {
         const resp = await axios.get(
-          "http://localhost:8080/api/membership/getAll"
+          "https://anthem-assignment-1.onrender.com/api/membership/getAll"
         );
         console.log(resp)
         setMemberships(resp.data);
