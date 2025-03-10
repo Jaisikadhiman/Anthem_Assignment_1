@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { toast } from "react-toastify";
-const Base_Url = "https://anthem-assignment-1.onrender.com/";
+const Base_Url = "https://anthem-assignment-1.onrender.com";
 export const addCustomer = createAsyncThunk(
   "customer/addcustomer",
   async (values) => {
