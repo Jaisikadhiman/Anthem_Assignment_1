@@ -6,19 +6,16 @@ const app = express();
 const customerRoutes = require("./routers/customerRoutes");
 const membershipRoutes = require("./routers/memberShipRoutes");
 
-var corsOptions = {
-  origin: ["https://anthem-assignment-1.vercel.app", "http://localhost:3000"], 
-  credentials: true, 
+const corsOptions = {
+  origin: ["https://anthem-assignment-1.vercel.app"], // No trailing slash
+  methods: "GET,POST,PUT,DELETE",
+  credentials: true,
 };
-
-app.use(cors(corsOptions));
-app.use(express.json())
-
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.json({ message: "Welcome Jaisika" });
 });
-
 
 app.use("/api/customer", customerRoutes);
 app.use("/api/membership", membershipRoutes);
