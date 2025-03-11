@@ -7,7 +7,8 @@ const customerRoutes = require("./routers/customerRoutes");
 const membershipRoutes = require("./routers/memberShipRoutes");
 
 var corsOptions = {
-  origin: "https://anthem-assignment-1.vercel.app/"
+  origin: ["https://anthem-assignment-1.vercel.app", "http://localhost:3000"], 
+  credentials: true, 
 };
 
 app.use(cors(corsOptions));
